@@ -4,7 +4,7 @@ import urllib
 
 url = "http://rubygems.org/gems/"
 
-def get_info(gem):
+def get_dependencies(gem):
     web = urllib.urlopen(url + gem)
     data = BeautifulSoup(web)
 
